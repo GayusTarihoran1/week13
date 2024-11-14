@@ -7,7 +7,7 @@
       { "src": "/build/(.*)", "dest": "/public/build/$1" },
       { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-    "buildCommand": "composer install && php artisan config:cache && php artisan route:cache && vite build",
+    "buildCommand": "npm install && npm run prod",
     "outputDirectory": "public",
     "env": {
       "APP_ENV": "production",
